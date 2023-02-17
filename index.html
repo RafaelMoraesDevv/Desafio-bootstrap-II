@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link do Bootstrap-->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Link do CSS-->
+    <link rel="stylesheet" href="bootstrap/css/style/custom.css">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row mb">
+                <div class="col">
+                    <h1>Dr.Pets</h1>
+                </div>
+
+                <div class="col">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#produtos">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cadastro.html">
+                                <button type="submit" class="btn btn-sm btn-success">Cadastre-se</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container" style="position: relative;">
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active" >
+                        <div class="ratio ratio-21x9">
+                            <img src="img/banho.jpg" alt="First slide" class="d-block w-100">
+                        </div>
+
+                        <div class="carousel-caption">
+                            <h5>Banho e Tosa</h5>
+                            <a href="cadastro.html">Cadastre-se em nosso site</a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="ratio ratio-21x9">
+                            <img src="img/consulta.jpg" alt="Second slide">
+                        </div>
+
+                        <div class="carousel-caption">
+                            <h5>Consultas</h5>
+                            <a href="cadastro.html">Cadastre-se em nosso site</a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="ratio ratio-21x9">
+                            <img src="img/exame.jpg" alt="Third slide">
+                        </div>
+
+                        <div class="carousel-caption">
+                            <h5>Exames</h5>
+                            <a href="cadastro.html">Cadastre-se em nosso site</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <div class="container">
+            <div class="row sobre">
+                <div class="col-md-7 col-sm-12">
+                    <h2>Sobre nós</h2>
+
+                    <p>A Clínica Veterinária Dr. Pats conta com uma excelente estrutura localizada no bairro Recanto Pereira próximo à Av. Brasil e com fácil acesso de todas as regiões..</p>
+
+                    <p>A Dr Pats oferece serviços de atendimento clínico geral, laboratoriais, exames de imagens (com agendamento prévio), cirurgias e consultas com especialistas. Sendo assim, é possível agendar consultas de: oftalmologia, dermatologia, endocrinologia, neurologia, cardiologia, oncologia, entre outras especialidades.</p>
+
+                    <p>Nossa equipe conta com excelentes profissionais que dividem conosco o amor e dedicação com os animais. Além do desejo e missão de oferecer o melhor atendimento que o seu pet e você, tutor, merecem.</p>
+
+                    <a class="btn btn-sm btn-success bottom" href="#contato">Entrar em contato</a>
+                </div>
+
+                <div class="col-md-5 col-sm-12" id="teste">
+                    <img src="img/banner.jpg" alt="foto de tecnologia" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Nossos Serviços</h2>
+                    <div class="card">
+                        <img src="img/banho.jpg" alt="foto-" class="img-fluid">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Banho e tosa</h5>
+                            <p class="card-text">Nosso centro de estética conta com profissionais preparados para realizar banho e tosa em seu pet ou qualquer atendimento estético. Já que nossos profissionais possuem ampla experiência e capacitação contínua.</p>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#moda-1">Verificar Preço</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/exame.jpg" alt="foto-" class="img-fluid">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Exames</h5>
+                            <p class="card-text">Os exames são importantes para auxiliar no diagnóstico do pet, afim de, se iniciar rapidamente o tratamento para as doenças dos cães ou gatos.</p>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#moda-2">Verificar Preço</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/consulta.jpg" alt="foto-" class="img-fluid">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Consuta</h5>
+                            <p class="card-text">Nós da Dr. Pats contamos com uma ótima equipe e estrutura para dar o melhor suporte para o seu pet. A consulta deve ser previamente agendada. Mas atendemos com prioridade os casos de emergência.</p>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#moda-3">Verificar Preço</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <h2>Contato</h2>
+                    <p>Entre em contato com a Dr. Pets e tire todas suas duvidas.</p>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <form class="form">
+                        <div class="input-group">
+                            <input class="form-control" type="text"  name="nome" placeholder="Digite seu nome" required>
+                        </div>
+
+                        <div class="input-group">
+                            <input class="form-control"  type="email"  name="email" placeholder="Digite seu e-mail" required>
+                        </div>
+
+                        <div class="input-group">
+                            <input class="form-control"  type="tel"  name="telefone" placeholder="Digite seu telefone">
+                        </div>
+
+                        <div class="input-group">
+                            <textarea class="form-control"  name="assunto"  cols="5" rows="5" placeholder="Assunto"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-sm btn-success">Entrar em contato</button>
+                        <button type="reset" class="btn btn-sm btn-success">Limpar dados</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="moda-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Banho e Tosa</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <h6>Confira os preços do banho</h6>
+                    <table class="table table-hover table-striper">
+
+                        <thead>
+                            <tr>
+                                <th>Tamanho</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+
+                        <tboby>
+                            <tr>
+                                <td>Pequeno porte</td>
+                                <td>R$ 35,00</td>
+                            </tr>
+                            <tr>
+                                <td>Médio porte</td>
+                                <td>R$ 50,00</td>
+                            </tr>
+                            <tr>
+                                <td>Grande porte</td>
+                                <td>R$ 70,00</td>
+                            </tr>
+                        </tboby>
+                    </table>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="moda-2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Exames</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <h6>Confira o tamanho e preços</h6>
+                    <table class="table table-hover table-striper">
+
+                        <thead>
+                            <tr>
+                                <th>Exame</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+
+                        <tboby>
+                            <tr>
+                                <td>Hemograma </td>
+                                <td>R$ 300</td>
+                            </tr>
+                            <tr>
+                                <td>Exame de urina e fezes</td>
+                                <td>R$ 600</td>
+                            </tr>
+                            <tr>
+                                <td>Função hepática e função renal</td>
+                                <td>R$ 900</td>
+                            </tr>
+                        </tboby>
+                    </table>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="moda-3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Consultas</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <h6>Confira o tamanho e preços</h6>
+                    <table class="table table-hover table-striper">
+
+                        <thead>
+                            <tr>
+                                <th>Consulta</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+
+                        <tboby>
+                            <tr>
+                                <td>Cardiologista</td>
+                                <td>R$ 300</td>
+                            </tr>
+                            <tr>
+                                <td>Clinico geral</td>
+                                <td>R$ 360</td>
+                            </tr>
+                            <tr>
+                                <td>Oftalmologista</td>
+                                <td>R$ 230</td>
+                            </tr>
+                        </tboby>
+                    </table>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <small>Desenvolvido por Rafael Moraes</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
