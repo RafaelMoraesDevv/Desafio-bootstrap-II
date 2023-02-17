@@ -1,0 +1,92 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2, h3, h3, h6, .card-title{
+  color: cadetblue;
+}
+
+header{
+    background-color: cadetblue;
+    color: #fff;
+    padding: 1rem;
+}
+
+header a {
+  color: #fff;
+}
+
+.nav-link{
+    color: #fff;
+}
+
+section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+input, textarea {
+    margin-bottom: 1rem;
+}
+
+#form-pet {
+   margin-bottom: 2rem;
+}
+
+.cadastro {
+  margin-top: 2rem;
+}
+
+.card {
+    width: 32%;
+    float: left;
+    margin: 5px;
+}
+
+footer {
+    text-align: center;
+    background-color: cadetblue;
+    padding: 1rem;
+}
+
+@media (max-width: 426px){
+  
+  .col, .mb  {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .sobre{
+    flex-direction: column;
+  }
+
+  #teste {
+    display: none;
+  }
+
+  .sobre img {
+    margin-bottom: 3rem;
+  }
+
+  .col h1{
+    text-align: center;
+  }
+
+  .card {
+    width: 100%;
+    margin: 1rem 0 1rem 0;
+  }
+
+  section {
+   padding:0;
+   margin-top: 3rem;
+  }
+
+  .bottom {
+    margin-bottom: 3rem;
+  }
+
+  footer {
+    margin-top: 3rem;
+  }
+}
